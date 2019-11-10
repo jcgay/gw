@@ -15,7 +15,7 @@ public class Main {
 
         try (ProjectConnection connection = connector.connect()) {
             BuildLauncher launcher = connection.newBuild();
-            launcher.forTasks("help");
+            launcher.forTasks(new Tasks(args).list());
             launcher.setStandardOutput(System.out);
             launcher.setStandardError(System.err);
             launcher.run();
