@@ -18,6 +18,7 @@ public class Main {
             launcher.forTasks(new Tasks(args).list());
             launcher.setStandardOutput(System.out);
             launcher.setStandardError(System.err);
+            launcher.setColorOutput(true);
             launcher.run();
         }
     }
