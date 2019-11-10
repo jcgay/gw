@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         GradleConnector connector = GradleConnector.newConnector();
-        connector.forProjectDirectory(new File("."));
+        connector.forProjectDirectory(new GradleProjectStructure(new File(".")).root());
 
         try (ProjectConnection connection = connector.connect()) {
             BuildLauncher launcher = connection.newBuild();
