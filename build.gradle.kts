@@ -28,6 +28,10 @@ tasks.test {
     useJUnitPlatform()
 }
 
+tasks.distZip {
+    archiveFileName.set("gw.zip")
+}
+
 application {
     mainClassName = "fr.jcgay.gw.Main"
 }
