@@ -8,6 +8,7 @@ repositories {
 
 dependencies {
     implementation("org.gradle:gradle-tooling-api:6.0")
+    implementation("org.jline:jline:3.13.1")
     runtimeOnly("org.slf4j:slf4j-simple:1.7.28") {
         because("The tooling API need an SLF4J implementation available at runtime.")
     }

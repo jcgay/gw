@@ -1,10 +1,10 @@
 package fr.jcgay.gw;
 
-public class Tasks {
+public class InputTasks {
 
     private String[] tasks = new String[]{"help"};
 
-    public Tasks(String[] args) {
+    public InputTasks(String[] args) {
         if (args.length > 0) {
             this.tasks = args;
         }
