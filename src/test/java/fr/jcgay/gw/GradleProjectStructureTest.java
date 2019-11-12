@@ -7,8 +7,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
+import static java.util.Collections.singletonList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class GradleProjectStructureTest {
@@ -42,6 +42,6 @@ class GradleProjectStructureTest {
 
     private static void writeFakeWrapper(@TempDir Path rootDir) throws IOException {
         Path wrapper = rootDir.resolve("gradlew.sh");
-        Files.write(wrapper, List.of(""));
+        Files.write(wrapper, singletonList(""));
     }
 }
